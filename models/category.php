@@ -14,4 +14,12 @@ class Category  {
         }
         $this->class = $_class;
     }
+
+    /**
+     * Get the value of class
+     */ 
+    public function getClass()
+    {
+        return $this->class;
+    }
 }
