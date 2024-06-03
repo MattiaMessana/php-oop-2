@@ -61,8 +61,11 @@ var_dump($products);
                 <div class="card text-center border-0 col p-3">
                     <img src="<?php echo $product->getPoster() ?>" class="card-img-top w-25 align-self-center rounded-3" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo $product->getBrand() . " ";
-                                                echo $product->getName() ?></h5>
+                        <h5 class="card-title">
+                            <?php 
+                                echo $product->getBrand() . " "; echo $product->getName(); 
+                            ?>
+                        </h5>
                         <p class="card-text"> <?php echo $product->getDescription() ?></p>
     
                         <p class="card-text"> <?php echo $product->getPrice() . "€" ?></p>
