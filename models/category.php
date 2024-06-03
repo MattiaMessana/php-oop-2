@@ -4,7 +4,7 @@ class Category  {
     private string $class;
 
     /**
-     * Set the value of name
+     * Set the value of class
      *
      * @return  self
      */ 
@@ -19,6 +19,11 @@ class Category  {
      * Get the value of class
      */ 
     public function getClass()
+    {
+        return $this->class;
+    }
+
+    public function __toString() 
     {
         return $this->class;
     }

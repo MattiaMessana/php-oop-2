@@ -61,14 +61,6 @@ class Product {
     }
 
     /**
-     * Get the value of _category
-     */ 
-    public function get_category()
-    {
-        return $this->category;
-    }
-
-    /**
      * Get the value of description
      */ 
     public function getDescription()

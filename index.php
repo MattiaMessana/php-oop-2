@@ -67,9 +67,9 @@ var_dump($products);
                             ?>
                         </h5>
                         <p class="card-text"> <?php echo $product->getDescription() ?></p>
-    
-                        <p class="card-text"> <?php echo $product->getPrice() . "€" ?></p>
-                        <p class="card-text"> <?php echo $product->getAmount() . " prodotti disponibili" ?></p>
+                        <p class="card-text">Categoria: <?php echo $product->getCategory()?></p>
+                        <p class="card-text">Prezzo: <?php echo $product->getPrice() . "€" ?></p>
+                        <p class="card-text"><?php echo $product->getAmount() . " prodotti disponibili" ?></p>
                         <a href="#" class="btn btn-primary">Add to cart</a>
                     </div>
                 </div>
